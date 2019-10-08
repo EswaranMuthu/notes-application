@@ -1,5 +1,5 @@
 
-# The largest heading </br> 
+# Notes application </br> 
   notes-applicaiton is smart project using microservice architecture where user can login read all his notes edit/delete them. also can create new notes. 
   
 ## High level System Design :
