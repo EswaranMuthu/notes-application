@@ -6,10 +6,10 @@ High level System Design :
 
   1) Form based or single sign on (SAML / OAUTH) user logon
   2) Identity service get form based request or SAML authn request. get user credientials authenticate against LDAP or active directory (authentication service).
-  3) sucess or failure response from authentication service. 
+  3) sucess or failure response from LDAP/ Active-directory to Identity service
   4) On successful login, create user profile. save user profile in redis with session expiry token as key.
   5) Pass session expiry token as query param to notes service home page (notes UI).
-  6) landing page (home page of notes application) receives successfully logged in user request from authentication service.  
+  6) landing page (home page of notes application) receives successfully logged in user request from Identity service.  
     drop unique session expiry token as cookie in user browser. all the subsequent request can fetch user profile using token. 
   7) UI passes token to backend. backend service gets user profile from redis using token.
   8) backend queries DB to fetch all notes pertaining to the user. 
