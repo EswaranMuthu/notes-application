@@ -1,8 +1,8 @@
 
-Awesome Notes Application :
+# The largest heading </br> 
   notes-applicaiton is smart project using microservice architecture where user can login read all his notes edit/delete them. also can create new notes. 
   
-High level System Design :
+## High level System Design :
 
   1) Form based or single sign on (SAML / OAUTH) user logon
   2) Identity service get form based request or SAML authn request. get user credientials authenticate against LDAP or active directory (authentication service).
